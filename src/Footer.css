@@ -1,0 +1,40 @@
+.footer-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+}
+
+.contact-text {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .footer-container {
+        padding: 10px 0;
+    }
+}
+
+.footer-wrapper a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-wrapper a:hover,
+.contact-text:hover {
+    text-decoration: underline;
+}
