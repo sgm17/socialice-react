@@ -12,6 +12,9 @@ function Home() {
         setOurMission(!ourMission)
     }
 
+    const appStoreUrl = ""
+    const playStoreUrl = ""
+
     if (ourMission) {
         return (<div className="background-container" style={{ backgroundImage: `url(${background})` }}>
             <div className='panel-container-mission'>
@@ -51,8 +54,8 @@ function Home() {
                 </div>
 
                 <div className='panel-stores'>
-                    <img src={apple} height='50' />
-                    <img src={google} height='75' />
+                    <a href={appStoreUrl}><img src={apple} height='50' /></a>
+                    <a href={playStoreUrl}><img src={google} height='75' /></a>
                 </div>
 
                 <span

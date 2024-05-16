@@ -46,6 +46,10 @@
     align-items: center;
 }
 
+.panel-stores>a {
+    text-decoration: none;
+}
+
 .panel-wrapper-mission {
     display: flex;
     flex-direction: column;
